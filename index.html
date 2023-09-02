@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Comments</title>
+</head>
+<body>
+    <div class="blocks">
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="bigBlock"></div>
+    </div>
+    <div class="main_comment">
+        <hr id="hr">
+        <div class="buttons">
+            <button class="btn btn_active" id="comments">Комментарии (0)</button>
+            <div class="container_sortng_list container_sortng_list_active">
+                <div class="sorting_list">
+                    <button class="condition selected_considion">По дате</button>
+                    <button class="condition">По количеству оценок</button>
+                    <button class="condition">По актуальности</button>
+                    <button class="condition">По количеству ответов</button>
+                </div>
+            </div>
+            <button class="btn sorting_up" id="sorting">По дате</button>
+            <button class="btn" id="favourites">Избранное</button>
+        </div>
+        <div class="container_input">
+            <p class="input_name">User #id141</p>
+            <p id="answer_information"></p>
+            <p class="input_count_of_word">Макс. 1000 символов</p>
+        </div>
+        <form action="" class="input_form">
+            <div data-answer=" " class="container_textarea" contenteditable="true" placeholder="Введите текст сообщения..."></div>
+            <button id="send_button" disabled>Отправить</button>
+        </form>
+        <div class="container_all_comments">
+            
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
